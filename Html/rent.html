@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="fixed top-0 bg-black bg-opacity-70 z-20 h-[100px] w-[100%] flex justify-center items-center">
+        <nav>
+            <ul class="flex  gap-7">
+                <li><a class="text-white text-2xl font-[500] border border-white rounded-lg w-32 h-10 px-4" href="./index.html">Home</a></li>
+                <li><a class="text-white text-2xl font-[500] border border-white rounded-lg w-32 h-10 px-4" href="">Rent A Tesla</a></li>
+                <li><a class="text-white text-2xl font-[500] border border-white rounded-lg w-32 h-10 px-4" href="./contact.html">Contact</a></li>
+                <li><a class="text-white text-2xl font-[500] border border-white rounded-lg w-32 h-10 px-4" href="">Gallery</a></li>
+                <li><a class="text-white text-2xl font-[500] border border-white rounded-lg w-32 h-10 px-4" href="">Get A Quote</a></li>
+                <li>
+                    <a href="./cart.html"
+                      ><div class="cart-container relative">
+                        <i class="fa fa-cart-plus text-white w-[25px] h-[15px]" aria-hidden="true"></i>
+                        <div class="cart-count rounded-full bg-[goldenrod] w-[2px] h-[2px] flex justify-center items-center p-[7px] absolute top-[-3px] right-[-3px] text-xs text-white">0</div>
+                      </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="h-[650px] bg-no-repeat bg-center bg-cover" style="background-image: url('../images/tesla-fans-schweiz-7_OQMgoGzDw-unsplash.jpg');">
+        
+
+        <div class="w-[400px] text-center mt-40 ml-[500px]">
+            <p class="text-black font-[800] text-5xl">Shockingly Easy Tesla Rentals</p>
+            <button class="border rounded-lg bg-black w-32 h-10 text-white mt-7 add-item">Add Item</button>
+        </div>
+        
+    </div>
+
+     <!-- main section -->
+     <div class="container">
+        <h1 class="title">Collections</h1>
+
+        <!-- alert -->
+        <div class="alert"></div>
+        <!-- End of alert -->
+
+        <!-- add item modal -->
+        <div class="add-modal">
+          <form>
+            <h2>Add Item</h2>
+            <input type="text" placeholder="Title" id="title" />
+            <input type="number" placeholder="price" id="price" />
+            <input type="text" placeholder="image url" id="imageUrl" />
+            <textarea name="" id="desc" cols="20" rows="5"></textarea>
+            <button id="submitItem">ADD</button>
+
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </form>
+        </div>
+        <!-- end of add item modal   -->
+
+        <div class="collection">
+          
+        </div>
+      </div>
+
+      <!-- End of main -->
+
+      <script type="module" src="../js/rent.js"></script>
+</body>
+</html>
